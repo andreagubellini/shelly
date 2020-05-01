@@ -6,7 +6,7 @@
     <article>
       <div>
         <h2><a href="{{ .RelPermalink }}">${{ .Title }} _</a></h2>
-        <p><i>{{ .PublishDate }}</i></p>
+        <p><i>{{ .PublishDate.Format "January 2, 2006" }}</i></p>
         <p>{{ .Summary }}</p>
       </div>
       {{ if .Truncated }}

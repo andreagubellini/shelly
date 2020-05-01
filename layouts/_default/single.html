@@ -3,7 +3,7 @@
 
 <h2>{{ .Title }}</h2>
 <p><i>{{ .Params.author }}</i></p>
-<p><i>[{{ .PublishDate }}]</i></p>
+<p><i>[{{ .PublishDate.Format "2 January 2006" }}]</i></p>
 
 <div id="post-content">
     <p>{{ .Content }}</p>
