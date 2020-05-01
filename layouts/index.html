@@ -4,7 +4,7 @@
 {{ .Content }}
 {{ range where .Pages "Section" "posts" }}
 <h2>Blog feed</h2>
-{{ range .Pages }}
+{{ range .Pages.ByDate }}
    <p><a href="{{ .Permalink }}">{{ .Title }}</a> </p>
 {{ end }}
 {{ end }}
