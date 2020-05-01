@@ -30,6 +30,11 @@ li {
     color: inherit;
 }
 
+ul {
+    margin: 1%;
+    color: inherit;
+}
+
 a:hover {
     color: green;
 }
