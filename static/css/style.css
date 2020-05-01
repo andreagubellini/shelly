@@ -25,6 +25,10 @@ a {
     font-weight: bold;
 }
 
+li {
+    margin: 1%;
+}
+
 a:hover {
     color: green;
 }
