@@ -27,6 +27,7 @@ a {
 
 li {
     margin: 1%;
+    color: inherit;
 }
 
 a:hover {
