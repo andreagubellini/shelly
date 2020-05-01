@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+<h2>{{ .Title }}</h2>
+<p><i>{{ .Params.author }}</i></p>
+<p><i>[{{ .PublishDate }}]</i></p>
+
+<div id="post-content">
+    <p>{{ .Content }}</p>
+</div>
+
+{{ partial "footer.html" . }}

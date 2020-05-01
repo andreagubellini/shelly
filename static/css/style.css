@@ -1,0 +1,53 @@
+
+/* generics */
+
+body {
+    margin: 1%;
+    font-family: "Source Code Pro", monospace;
+    background-color: black;
+}
+p {
+    margin: 1%;
+    color: rgb(216, 235, 206);
+}
+
+h1 {
+    color: rgb(97, 249, 97);
+}
+
+h2 {
+    color: rgb(39, 225, 39);
+}
+
+a {
+    color: rgb(39, 225, 39);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: green;
+}
+
+/* post-content */
+
+#post-content p {
+    margin: 2%;
+    color: rgb(216, 235, 206);
+}
+
+/* main menu */
+
+.main-menu {
+    display: inline-block;
+}
+
+/* footer */
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: start;
+}

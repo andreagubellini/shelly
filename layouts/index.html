@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+
+{{ .Content }}
+{{ range where .Pages "Section" "posts" }}
+<h2>Blog feed</h2>
+{{ range .Pages }}
+   <p><a href="{{ .Permalink }}">{{ .Title }}</a> </p>
+{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

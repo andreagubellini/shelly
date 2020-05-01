@@ -1,0 +1,12 @@
+name = "shelly"
+license = "MIT"
+licenselink = "https://github.com/andreagubellini"
+description = "a shell-like portfolio with singlepages menu and blog"
+homepage = ""
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Andrea Gubellini"
+  homepage = "https://github.com/andreagubellini"
