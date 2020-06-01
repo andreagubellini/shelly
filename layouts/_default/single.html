@@ -2,8 +2,10 @@
 {{ partial "header.html" . }}
 
 <h2>{{ .Title }}</h2>
+{{ if .Params.post  }}
 <p><i>Written by: {{ .Params.author }}</i></p>
 <p><i>[{{ .PublishDate.Format "2 January 2006" }}]</i></p>
+{{ end }}
 
 <div id="post-content">
     <p>{{ .Content }}</p>

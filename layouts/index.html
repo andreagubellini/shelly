@@ -3,9 +3,11 @@
 
 {{ .Content }}
 {{ range where .Pages "Section" "posts" }}
-<h2>Blog feed</h2>
+<hr class="post">
+<h1>Blog feed</h1>
+<hr class="post">
 {{ range .Pages.ByDate }}
-   <p><a href="{{ .Permalink }}">{{ .Title }}</a> </p>
+   <h2><a href="{{ .Permalink }}">{{ .Title }}</h2></p>
 {{ end }}
 {{ end }}
 
