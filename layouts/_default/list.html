@@ -6,15 +6,19 @@
     <article>
       <div>
         <h2><a href="{{ .RelPermalink }}">${{ .Title }} _</a></h2>
-        <p><i>{{ .PublishDate.Format "January 2, 2006" }}</i></p>
-        <p>{{ .Summary }}</p>
+        <div class="author">
+        Written by: {{ .Params.author }}
+        {{ .PublishDate.Format "January 2, 2006" }}
+      </div>
+        <div id="post-content">
+          <p>{{ .Summary }}</p>
+        </div>
       </div>
       {{ if .Truncated }}
       <div>
          <a href="{{ .RelPermalink }}">Read More…</a>
       </div>
       {{ end }}
-      <hr class="post">
     </article>
 {{ end }}
 

@@ -3,12 +3,14 @@
 
 <h2>{{ .Title }}</h2>
 {{ if .Params.post  }}
-<p><i>Written by: {{ .Params.author }}</i></p>
-<p><i>[{{ .PublishDate.Format "2 January 2006" }}]</i></p>
+<div class="author">
+    Written by: {{ .Params.author }}
+    {{ .PublishDate.Format "January 2, 2006" }}
+  </div>
 {{ end }}
 
 <div id="post-content">
-    <p>{{ .Content }}</p>
+<p>{{ .Content }}</p>
 </div>
 
 {{ partial "footer.html" . }}
