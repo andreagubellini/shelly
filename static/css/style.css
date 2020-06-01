@@ -82,3 +82,30 @@ div.author {
   text-align: center;
   font-size: 75%;
 }
+
+
+
+/* mobile */
+
+@media only screen and (max-width: 700px) {
+    #post-content p {
+        margin: 3%;
+        padding-bottom: 1%;
+    }
+
+    p {
+        margin: 3%;
+        padding: auto;
+        color: rgb(216, 235, 206);
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin-top: 55%;
+        width: 100%;
+        text-align: center;
+        font-size: 75%;
+      }
+}
